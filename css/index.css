@@ -1,0 +1,72 @@
+body{
+    background-image: url('/images/fondo.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#TituloPrincipal{
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 1px 1px rgb(231, 177, 177);
+    color: blueviolet;
+}
+
+div.father{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+    border-radius: 50px;
+}
+
+
+div.upper{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 2, 26);
+    text-align: center;
+    height: 300px;
+}
+
+.infoTexto{
+    color: aliceblue;
+}
+
+p{
+    color: aliceblue;
+}
+
+
+div.divValor{
+    text-align: center;
+}
+
+
+
+div.center{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+div.bottom{
+    display: flex;
+    background-color: blue;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 300px;
+}
+
+div.divEgresos{
+    background-color: brown;
+}
+
+div.divIngresos{
+    background-color: rgb(108, 165, 42);
+}
