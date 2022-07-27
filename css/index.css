@@ -19,6 +19,7 @@ div.father{
     margin-left: 100px;
     margin-right: 100px;
 
+    /*error con el border*/
     border-style: solid;
     border-radius: 20px;
 }
@@ -35,7 +36,7 @@ div.upper{
 }
 
 .infoPresupuesto{
-    color: rgb(214, 135, 16);
+    color: rgb(226, 226, 225);
     font-size: 40px;
 }
 
@@ -57,17 +58,31 @@ div.divValor{
     margin-right: 20%;
     margin-left: 20%;
     border-style: groove;
+    border-color: aliceblue;
     border-radius: 30px;
 }
 
 
-div.divInfoIngresos, div.divInfoEgresos{
+div.divInfoIngresos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-right: 40%;
     margin-left: 40%;
     border-style: groove;
+    border-color: rgb(32, 155, 32);;
+    border-radius: 30px;
+}
+
+
+div.divInfoEgresos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 40%;
+    margin-left: 40%;
+    border-style: groove;
+    border-color: red;
     border-radius: 30px;
 }
 
