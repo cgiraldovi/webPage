@@ -55,8 +55,8 @@ div.divValor{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
     border-style: groove;
     border-color: aliceblue;
     border-radius: 30px;
@@ -86,9 +86,6 @@ div.divInfoEgresos{
     border-radius: 30px;
 }
 
-
-
-
 div.center{
     background-color: aliceblue;
     text-align: center;
@@ -96,7 +93,7 @@ div.center{
 
 div.bottom{
     display: flex;
-    background-color: blue;
+    background-color: rgb(68, 0, 255);
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -105,10 +102,47 @@ div.bottom{
     height: 300px;
 }
 
-div.divEgresos{
-    background-color: brown;
+
+div.divIngresosPadre{
+    margin-top: 20px;
+    background-color: rgb(108, 165, 42);
+    text-align: center;
 }
 
-div.divIngresos{
-    background-color: rgb(108, 165, 42);
+#listaIngresos{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 200px;
+}
+
+.elementoIngresos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.divEgresosPadre{
+    margin-top: 20px;
+    text-align: center;
+    background-color: brown;    
+}
+
+#listaEgresos{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 200px;
+}
+
+.elementoEgresos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

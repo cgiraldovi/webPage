@@ -15,7 +15,7 @@
             <h1 id="TituloPrincipal">Aplicacion presupuesto disponible</h1>
 
             <div class="divValor">
-                <p class="infoPresupuesto">Presupuesto disponible</p>
+                <p class="infoPresupuesto">Presupuesto disponible:</p>
                 <p class="infoPresupuesto" id="presupuesto">2000 $</p>
             </div>
 
@@ -38,18 +38,21 @@
 
         <div class="bottom">
 
-            <div class="divIngresos">
-                <p>ingresos</p>
+            <div class="divIngresosPadre">
+                <h1>Ingresos</h1>
+                <div id="listaIngresos">
+                    </div>
+
+
+
             </div>
 
-            <div class="divEgresos">
-                <p>Egresos</p>
+            <div class="divEgresosPadre">
+                <h1>Egresos</h1>
+                <div id="listaEgresos">
+                </div>
             </div>
-
         </div>
-        
-        
-
     </div>
 
 
@@ -61,5 +64,8 @@
     <script src="js/ingreso.js"></script>
     <script src="js/egreso.js"></script>
     <script src="js/index.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
