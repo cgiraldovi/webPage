@@ -101,4 +101,23 @@ function eliminarEgreso(id){
     cargarEgresos();
 }
 
-cargarApp()
+function agregarDato(){
+    let formulario = document.forms["formulario"];
+    let tipo = formulario['tipo'];
+    let descripcion = formulario["descripcion"];
+    let valor = formulario["valor"];
+
+    if(descripcion.value !== "" && valor.value != ""){
+        if(tipo.value == "ingreso"){
+            ingresos.push(new Ingreso(descripcion.value, +valor.value));
+            cargarCabecero();
+            cargarEgresos();
+        }else if(tipo.value === "egreso"){
+            egresos.push(new Egreso(descripcion.value, +valor.value));
+            cargarCabecero();
+            cargarEgresos();
+        }
+    }
+}
+
+cargarApp();

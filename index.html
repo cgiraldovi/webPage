@@ -31,8 +31,23 @@
 
         </div>
 
-        <div class="center">
-            <p>hola mundo con java</p>
+        <div id="formulario" onsubmit="return false;">
+            <div class="agregarContenedor">
+                <select class="agregarTipo" id='tipo'>
+                    <option value="ingreso" selected>+</option>
+                    <option value="egreso" selected>-</option>
+                </select>
+
+                <input type="text" class="agregarDescripcion" 
+                placeholder="Agregar descripcion" id="descripcion"/>
+
+                <input type="number" class="agregarValor"
+                placeholder="Valor" id="valor"/ step="any">
+                <button class="agregarBoton" onclick="agregarDato()">
+                    <ion-icon name="add-circle-outline"></ion-icon>
+                </button>
+            </div>
+
 
         </div>
 
@@ -40,11 +55,7 @@
 
             <div class="divIngresosPadre">
                 <h1>Ingresos</h1>
-                <div id="listaIngresos">
-                    </div>
-
-
-
+                <div id="listaIngresos"></div>
             </div>
 
             <div class="divEgresosPadre">
@@ -60,9 +71,9 @@
     
 
 
-    <script src="js/dato.js"></script>
-    <script src="js/ingreso.js"></script>
-    <script src="js/egreso.js"></script>
+    <script src="js/Dato.js"></script>
+    <script src="js/Ingreso.js"></script>
+    <script src="js/Egreso.js"></script>
     <script src="js/index.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
