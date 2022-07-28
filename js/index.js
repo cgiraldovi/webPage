@@ -102,22 +102,39 @@ function eliminarEgreso(id){
 }
 
 function agregarDato(){
-    let formulario = document.forms["formulario"];
-    let tipo = formulario['tipo'];
-    let descripcion = formulario["descripcion"];
-    let valor = formulario["valor"];
 
-    if(descripcion.value !== "" && valor.value != ""){
-        if(tipo.value == "ingreso"){
-            ingresos.push(new Ingreso(descripcion.value, +valor.value));
+    let tipo = showSelected();
+    let descripcion = getDescripcion();
+    let valor = document.getElementById("valor").value;
+
+    if(valor != "" && descripcion != ""){
+
+        if(tipo == "ingreso"){
+            let nuevoIngreso = new Ingreso(descripcion, Number(valor));    
+            ingresos.push(nuevoIngreso);
             cargarCabecero();
-            cargarEgresos();
-        }else if(tipo.value === "egreso"){
-            egresos.push(new Egreso(descripcion.value, +valor.value));
+            cargarIngresos();
+        } else if(tipo == "egreso") {
+            let nuevoEgreso = new Egreso(descripcion, Number(valor));
+            egresos.push(nuevoEgreso);
             cargarCabecero();
             cargarEgresos();
         }
+    } else {
+        alert("Debe ingresar una descripcion y un valor");
     }
+
+}
+
+function showSelected(){
+    let tipo = document.getElementById("tipo").value;
+    return tipo;
+}
+
+function getDescripcion(){
+    let inputValue = document.getElementById("descripcion").value; 
+    document.getElementById("descripcion").innerHTML = inputValue;
+    return inputValue; 
 }
 
 cargarApp();
