@@ -12,7 +12,7 @@
     <div class="father">
 
         <div class="upper">
-            <h1 id="TituloPrincipal">Aplicacion presupuesto disponible</h1>
+            <h1 id="TituloPrincipal">APLICACION PRESUPUESTO DISPONIBLE</h1>
 
             <div class="divValor">
                 <p class="infoPresupuesto">Presupuesto disponible:</p>
@@ -32,15 +32,15 @@
         </div>
 
         <div id="formulario" onsubmit="return false;" onchange="showSelected();">
-            <div class="agregarContenedor">
-                <select class="agregarTipo" id="tipo">
+            <div >
+                <select class="agregarTipo" id="tipo" >
                     <option value="ingreso" selected>+</option>
                     <option value="egreso" selected>-</option>
                 </select>
 
-                <input type="text" class="agregarDescripcion" id="descripcion" placeholder="Agregar descripcion"/>
+                <input type="text" id="descripcion" placeholder="Agregar descripcion"/>
 
-                <input type="number" class="agregarValor" placeholder="Valor" id="valor" step="any"/>
+                <input type="number" placeholder="Valor" id="valor" step="any"/>
 
                 <button class="agregarBoton" onclick="agregarDato()">
                     <ion-icon name="add-circle-outline"></ion-icon>
@@ -53,12 +53,12 @@
         <div class="bottom">
 
             <div class="divIngresosPadre">
-                <h1>Ingresos</h1>
+                <h1 class="BottomTitulo">Ingresos</h1>
                 <div id="listaIngresos"></div>
             </div>
 
             <div class="divEgresosPadre">
-                <h1>Egresos</h1>
+                <h1 class="BottomTitulo">Egresos</h1>
                 <div id="listaEgresos">
                 </div>
             </div>

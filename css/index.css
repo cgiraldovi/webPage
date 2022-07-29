@@ -8,8 +8,8 @@ body{
 #TituloPrincipal{
     font-size: 60px;
     text-align: center;
-    text-shadow: 1px 1px rgb(15, 15, 15);
-    color: blueviolet;
+    text-shadow: 3px 3px rgb(202, 93, 42);
+    color: rgb(49, 226, 43);
 }
 
 div.father{
@@ -18,10 +18,6 @@ div.father{
     margin-top: 150px;
     margin-left: 100px;
     margin-right: 100px;
-
-    /*error con el border*/
-    border-style: solid;
-    border-radius: 20px;
 }
 
 
@@ -31,8 +27,15 @@ div.upper{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgb(7, 2, 26);
-    height: 500px;
+    background-image: url('/images/fondoBottom.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 620px;
+
+    border: 10px solid rgb(116, 14, 65);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
 }
 
 .infoPresupuesto{
@@ -40,13 +43,10 @@ div.upper{
     font-size: 40px;
 }
 
-.infoIngresos{
-    color: rgb(32, 155, 32);
+.infoIngresos, .infoEgresos{
+    color: rgb(222, 223, 222);
+    font-size: 30px;
 
-}
-
-.infoEgresos{
-    color: rgb(255, 0, 0);
 }
 
 
@@ -57,7 +57,8 @@ div.divValor{
     justify-content: space-around;
     margin-right: 15%;
     margin-left: 15%;
-    border-style: groove;
+    border-style: solid;
+
     border-color: aliceblue;
     border-radius: 30px;
 }
@@ -69,8 +70,9 @@ div.divInfoIngresos{
     justify-content: space-around;
     margin-right: 40%;
     margin-left: 40%;
-    border-style: groove;
-    border-color: rgb(32, 155, 32);;
+    border-style: solid;
+    border-color: rgb(63, 206, 63);
+    background-color: rgb(63, 206, 63);
     border-radius: 30px;
 }
 
@@ -81,36 +83,67 @@ div.divInfoEgresos{
     justify-content: space-around;
     margin-right: 40%;
     margin-left: 40%;
-    border-style: groove;
-    border-color: red;
+    border-style: solid;
+    border-color: rgb(250, 22, 22);
+    background-color: rgb(250, 22, 22);
     border-radius: 30px;
 }
 
 #formulario{
-    background-color: aliceblue;
+    background-image: url('/images/fondoBottom.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
+    padding: 10px;
+    border-left: 10px solid rgb(116, 14, 65);
+    border-right: 10px solid rgb(116, 14, 65);
 }
 
+.agregarBoton, .agregarTipo{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#descripcion, #valor{
+    font-size: 30px;
+}
+
+
 div.bottom{
+
     display: flex;
-    background-color: rgb(68, 0, 255);
+    background-color: rgb(7, 2, 26);
+    background-image: url('/images/fondoBottom.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    height: 300px;
+    min-height: 150px;
+
+    border: 10px solid rgb(116, 14, 65);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
 }
 
 
 div.divIngresosPadre{
     margin-top: 20px;
-    background-color: rgb(108, 165, 42);
-    text-align: center;
+    background-color: rgb(63, 206, 63);
+    border: 5px solid white;
+
+    margin-bottom: 20px;
+    width: 400px;
 }
 
 #listaIngresos{
-    background-color: aliceblue;
+    border-top: 5px solid white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -123,21 +156,27 @@ div.divIngresosPadre{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    background-color: aliceblue;
+    width: 400px;
 }
 
 div.divEgresosPadre{
     margin-top: 20px;
     text-align: center;
-    background-color: brown;    
+    background-color: rgb(250, 22, 22);  
+    border: 5px solid white;
+    margin-bottom: 20px;
+    width: 400px;
 }
 
 #listaEgresos{
-    background-color: aliceblue;
+    border-top: 5px solid white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding-right: 200px;
+
 }
 
 .elementoEgresos{
@@ -145,4 +184,13 @@ div.divEgresosPadre{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: aliceblue;
+    width: 400px;
+
 }
+
+.BottomTitulo{
+    color: aliceblue;
+}
+
+.botonEliminar{

@@ -123,7 +123,6 @@ function agregarDato(){
     } else {
         alert("Debe ingresar una descripcion y un valor");
     }
-
 }
 
 function showSelected(){
