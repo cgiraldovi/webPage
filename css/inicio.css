@@ -1,0 +1,61 @@
+body{
+    background-image: url('/images/fondo.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#TituloPrincipal{
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 3px 3px rgb(202, 93, 42);
+    color: aliceblue;
+}
+
+#DivPadre{
+    background-image: url('/images/fondoBottom.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+#DivFormulario{
+    display: flex;   
+    flex-direction: column;
+    margin: 20px;
+}
+
+.Elemento label{
+    color: aliceblue;
+    margin: 10px;
+}
+
+.Elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    margin-bottom: 30px;
+}
+
+.Elemento input[type="submit"]{
+    background-color: rgb(11, 45, 75);;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+#BotonEnviar:hover{
+    background-color: rgb(29, 71, 107)
+}

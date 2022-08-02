@@ -9,13 +9,13 @@ body{
     font-size: 60px;
     text-align: center;
     text-shadow: 3px 3px rgb(202, 93, 42);
-    color: rgb(49, 226, 43);
+    color: aliceblue;
 }
 
 div.father{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -31,7 +31,7 @@ div.upper{
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
-    height: 620px;
+    height: 450px;
 
     border: 10px solid rgb(116, 14, 65);
     border-top-right-radius: 30px;
