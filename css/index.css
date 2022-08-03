@@ -16,8 +16,8 @@ div.father{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
 
@@ -31,21 +31,21 @@ div.upper{
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
-    height: 450px;
+    height: 300px;
 
-    border: 10px solid rgb(116, 14, 65);
+    border: 5px solid rgb(116, 14, 65);
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
 }
 
 .infoPresupuesto{
-    color: rgb(226, 226, 225);
-    font-size: 40px;
+    color: aliceblue;
+    font-size: 30px;
 }
 
 .infoIngresos, .infoEgresos{
-    color: rgb(222, 223, 222);
-    font-size: 30px;
+    color: aliceblue;
+    font-size: 20px;
 
 }
 
@@ -73,6 +73,8 @@ div.divInfoIngresos{
     border-style: solid;
     border-color: rgb(63, 206, 63);
     background-color: rgb(63, 206, 63);
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 30px;
 }
 
@@ -86,6 +88,8 @@ div.divInfoEgresos{
     border-style: solid;
     border-color: rgb(250, 22, 22);
     background-color: rgb(250, 22, 22);
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 30px;
 }
 
@@ -96,8 +100,8 @@ div.divInfoEgresos{
     background-attachment: fixed;
     text-align: center;
     padding: 10px;
-    border-left: 10px solid rgb(116, 14, 65);
-    border-right: 10px solid rgb(116, 14, 65);
+    border-left: 5px solid rgb(116, 14, 65);
+    border-right: 5px solid rgb(116, 14, 65);
 }
 
 .agregarBoton, .agregarTipo{
@@ -126,7 +130,7 @@ div.bottom{
     align-items: flex-start;
     min-height: 150px;
 
-    border: 10px solid rgb(116, 14, 65);
+    border: 5px solid rgb(116, 14, 65);
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     
@@ -191,4 +195,9 @@ div.divEgresosPadre{
 
 .BottomTitulo{
     color: aliceblue;
+}
+
+.botonEliminar{
+    width: 40px;
+    margin: 3px;
 }
