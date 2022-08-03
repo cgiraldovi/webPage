@@ -1,5 +1,5 @@
 body{
-    background-image: url('/images/fondo.jpg');
+    background-image: url('./images/fondo.jpg');
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
@@ -27,7 +27,7 @@ div.upper{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: url('/images/fondoBottom.png');
+    background-image: url('./images/fondoBottom.png');
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
@@ -94,7 +94,7 @@ div.divInfoEgresos{
 }
 
 #formulario{
-    background-image: url('/images/fondoBottom.png');
+    background-image: url('./images/fondoBottom.png');
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
@@ -119,7 +119,7 @@ div.bottom{
 
     display: flex;
     background-color: rgb(7, 2, 26);
-    background-image: url('/images/fondoBottom.png');
+    background-image: url('./images/fondoBottom.png');
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
