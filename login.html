@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Principal</title>
-    <link href="./css/inicio.css" rel="stylesheet"/>
+    <link href="./css/login.css" rel="stylesheet"/>
 </head>
 <body>
     <h1 id="TituloPrincipal">Login</h1>
@@ -21,31 +21,25 @@
                 </div>
 
                 <div class="Elemento">
-                    <label for="InputContrasenia">Contrasenia:</label>
-                    <input type="password" id="InputContrasenia" 
+                    <label for="InputContraseña">Contraseña:</label>
+                    <input type="password" id="InputContraseña" 
                      required="true"/>
                 </div>
 
-                <div class="Elemento">
-                    <input type="submit" value="Enviar" id="BotonEnviar"/>
-                </div>
-
-
-
             </form>
 
-        </div>
-        <!-- 
-        <div id="DivBoton">
-            <input type="submit" value="Enviar"/>
-        </div>
+            <div class="Elemento">
+                <input type="submit" value="Enviar" id="BotonEnviar"
+                onclick="mostrarValores()"/>
+            </div>
 
-        -->
-
+        </div>
 
 
     </div>
 
 
+    <script src="./js/User.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
