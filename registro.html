@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="./css/regristro.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1 id="TituloPrincipal">Registro</h1>
+
+    <div id="DivPadre">
+
+        <div id="DivFormularioRegistro">
+            <form id="FormularioRegristro">
+
+                <div class="Elemento">
+                    <label for="InputNombre">Nombre:</label>
+                    <input type="text" id="InputNombre"  
+                    required="true"/>
+                </div>
+
+                <div class="Elemento">
+                    <label for="InputApellido">Apellido:</label>
+                    <input type="text" id="InputApellido"  
+                    required="true"/>
+                </div>
+
+                <div class="Elemento">
+                    <label for="InputUsuario">Usuario:</label>
+                    <input type="text" id="InputUsuario"  
+                    required="true"/>
+                </div>
+
+                <div class="Elemento">
+                    <label for="InputContraseña">Contraseña:</label>
+                    <input type="password" id="InputContraseña" 
+                     required="true"/>
+                </div>
+
+            </form>
+
+            <div class="Elemento">
+                <input type="submit" value="Crear" id="BotonEnviar"
+                onclick="crear()"/>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div id="divBotonVolver">
+        <input type="submit" value="VOLVER" id="BotonVolver"
+        onclick="volver()"/>
+    </div>
+    
+    <script src="./js/registro.js"></script>
+</body>
+</html>
