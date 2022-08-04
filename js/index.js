@@ -136,4 +136,8 @@ function getDescripcion(){
     return inputValue; 
 }
 
+function volver(){
+    window.location.href="login.html";
+}
+
 cargarApp();

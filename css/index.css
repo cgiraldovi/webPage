@@ -201,3 +201,39 @@ div.divEgresosPadre{
     width: 40px;
     margin: 3px;
 }
+
+
+
+.Elemento label{
+    color: aliceblue;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.Elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.Elemento input[type="submit"]{
+    background-color: rgb(81, 16, 156);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+#BotonVolver:hover{
+    background-color: rgb(212, 117, 9)
+}
+#BotonVolver{
+    border: 1px solid rgb(81, 16, 156);
+    border-radius: 20px;
+}
