@@ -1,0 +1,5 @@
+{"usuarios":[
+        {"nombre":"jonny", "apellido":"joestar", "usuario":"jojo", "contraseña":1234},
+        {"nombre":"danny", "apellido":"puto", "usuario":"dannyputo", "contraseña":4321}
+    ]
+}
